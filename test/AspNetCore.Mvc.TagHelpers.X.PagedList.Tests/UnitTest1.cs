@@ -8,7 +8,6 @@ namespace AspNetCore.Mvc.TagHelpers.X.PagedList.Tests
         [Fact]
         public void Test1()
         {
-
         }
     }
 }
