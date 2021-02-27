@@ -9,46 +9,46 @@ namespace Olbrasoft.AspNetCore.Mvc.TagHelpers
     {
         private static void SetMinimalOption(PagedListRenderOptions option)
         {
-            option.DisplayLinkToFirstPage = PagedListDisplayMode.Never;
-            option.DisplayLinkToLastPage = PagedListDisplayMode.Never;
-            option.DisplayLinkToPreviousPage = PagedListDisplayMode.Always;
-            option.DisplayLinkToNextPage = PagedListDisplayMode.Always;
+            option.DisplayLinkToFirstPage = DisplayMode.Never;
+            option.DisplayLinkToLastPage = DisplayMode.Never;
+            option.DisplayLinkToPreviousPage = DisplayMode.Always;
+            option.DisplayLinkToNextPage = DisplayMode.Always;
             option.DisplayLinkToIndividualPages = false;
         }
 
         private static void SetPageNumbersOnlyOption(PagedListRenderOptions option)
         {
-            option.DisplayLinkToFirstPage = PagedListDisplayMode.Never;
-            option.DisplayLinkToLastPage = PagedListDisplayMode.Never;
-            option.DisplayLinkToPreviousPage = PagedListDisplayMode.Never;
-            option.DisplayLinkToNextPage = PagedListDisplayMode.Never;
+            option.DisplayLinkToFirstPage = DisplayMode.Never;
+            option.DisplayLinkToLastPage = DisplayMode.Never;
+            option.DisplayLinkToPreviousPage = DisplayMode.Never;
+            option.DisplayLinkToNextPage = DisplayMode.Never;
             option.DisplayLinkToIndividualPages = true;
         }
 
         private static void SetPageNumbersPlusPrevAndNextOption(PagedListRenderOptions option)
         {
-            option.DisplayLinkToFirstPage = PagedListDisplayMode.Never;
-            option.DisplayLinkToLastPage = PagedListDisplayMode.Never;
-            option.DisplayLinkToPreviousPage = PagedListDisplayMode.Always;
-            option.DisplayLinkToNextPage = PagedListDisplayMode.Always;
+            option.DisplayLinkToFirstPage = DisplayMode.Never;
+            option.DisplayLinkToLastPage = DisplayMode.Never;
+            option.DisplayLinkToPreviousPage = DisplayMode.Always;
+            option.DisplayLinkToNextPage = DisplayMode.Always;
             option.DisplayLinkToIndividualPages = true;
         }
 
         private static void SetPageNumbersPlusFirstAndLastOption(PagedListRenderOptions option)
         {
-            option.DisplayLinkToFirstPage = PagedListDisplayMode.Always;
-            option.DisplayLinkToLastPage = PagedListDisplayMode.Always;
-            option.DisplayLinkToPreviousPage = PagedListDisplayMode.Never;
-            option.DisplayLinkToNextPage = PagedListDisplayMode.Never;
+            option.DisplayLinkToFirstPage = DisplayMode.Always;
+            option.DisplayLinkToLastPage = DisplayMode.Always;
+            option.DisplayLinkToPreviousPage = DisplayMode.Never;
+            option.DisplayLinkToNextPage = DisplayMode.Never;
             option.DisplayLinkToIndividualPages = true;
         }
 
         private static void SetFullOption(PagedListRenderOptions option)
         {
-            option.DisplayLinkToFirstPage = PagedListDisplayMode.Always;
-            option.DisplayLinkToLastPage = PagedListDisplayMode.Always;
-            option.DisplayLinkToPreviousPage = PagedListDisplayMode.Always;
-            option.DisplayLinkToNextPage = PagedListDisplayMode.Always;
+            option.DisplayLinkToFirstPage = DisplayMode.Always;
+            option.DisplayLinkToLastPage = DisplayMode.Always;
+            option.DisplayLinkToPreviousPage = DisplayMode.Always;
+            option.DisplayLinkToNextPage = DisplayMode.Always;
             option.DisplayLinkToIndividualPages = true;
         }
 

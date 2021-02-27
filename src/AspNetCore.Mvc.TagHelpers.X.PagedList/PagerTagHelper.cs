@@ -336,13 +336,13 @@ namespace Olbrasoft.AspNetCore.Mvc.TagHelpers
             }
 
             //first
-            if (Options.DisplayLinkToFirstPage == PagedListDisplayMode.Always || Options.DisplayLinkToFirstPage == PagedListDisplayMode.IfNeeded && firstPageToDisplay > 1)
+            if (Options.DisplayLinkToFirstPage == DisplayMode.Always || Options.DisplayLinkToFirstPage == DisplayMode.IfNeeded && firstPageToDisplay > 1)
             {
                 listItemLinks.Add(First(urlHelper));
             }
 
             //previous
-            if (Options.DisplayLinkToPreviousPage == PagedListDisplayMode.Always || Options.DisplayLinkToPreviousPage == PagedListDisplayMode.IfNeeded && !List.IsFirstPage)
+            if (Options.DisplayLinkToPreviousPage == DisplayMode.Always || Options.DisplayLinkToPreviousPage == DisplayMode.IfNeeded && !List.IsFirstPage)
             {
                 listItemLinks.Add(Previous(urlHelper));
             }
@@ -388,13 +388,13 @@ namespace Olbrasoft.AspNetCore.Mvc.TagHelpers
             }
 
             //next
-            if (Options.DisplayLinkToNextPage == PagedListDisplayMode.Always || Options.DisplayLinkToNextPage == PagedListDisplayMode.IfNeeded && !List.IsLastPage)
+            if (Options.DisplayLinkToNextPage == DisplayMode.Always || Options.DisplayLinkToNextPage == DisplayMode.IfNeeded && !List.IsLastPage)
             {
                 listItemLinks.Add(Next(urlHelper));
             }
 
             //last
-            if (Options.DisplayLinkToLastPage == PagedListDisplayMode.Always || Options.DisplayLinkToLastPage == PagedListDisplayMode.IfNeeded && lastPageToDisplay < List.PageCount)
+            if (Options.DisplayLinkToLastPage == DisplayMode.Always || Options.DisplayLinkToLastPage == DisplayMode.IfNeeded && lastPageToDisplay < List.PageCount)
             {
                 listItemLinks.Add(Last(urlHelper));
             }

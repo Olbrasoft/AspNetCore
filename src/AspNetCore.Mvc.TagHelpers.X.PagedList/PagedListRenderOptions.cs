@@ -15,10 +15,10 @@ namespace Olbrasoft.AspNetCore.Mvc.TagHelpers
 
         public PagedListRenderOptions()
         {
-            DisplayLinkToFirstPage = PagedListDisplayMode.IfNeeded;
-            DisplayLinkToLastPage = PagedListDisplayMode.IfNeeded;
-            DisplayLinkToPreviousPage = PagedListDisplayMode.IfNeeded;
-            DisplayLinkToNextPage = PagedListDisplayMode.IfNeeded;
+            DisplayLinkToFirstPage = DisplayMode.IfNeeded;
+            DisplayLinkToLastPage = DisplayMode.IfNeeded;
+            DisplayLinkToPreviousPage = DisplayMode.IfNeeded;
+            DisplayLinkToNextPage = DisplayMode.IfNeeded;
             DisplayLinkToIndividualPages = true;
             DisplayPageCountAndCurrentLocation = false;
             MaximumPageNumbersToDisplay = 10;
@@ -72,27 +72,27 @@ namespace Olbrasoft.AspNetCore.Mvc.TagHelpers
         /// <summary>
         /// If set to Always, always renders the paging control. If set to IfNeeded, render the paging control when there is more than one page.
         /// </summary>
-        public PagedListDisplayMode Display { get; set; }
+        public DisplayMode Display { get; set; }
 
         ///<summary>
         /// If set to Always, render a hyperlink to the first page in the list. If set to IfNeeded, render the hyperlink only when the first page isn't visible in the paging control.
         ///</summary>
-        public PagedListDisplayMode DisplayLinkToFirstPage { get; set; }
+        public DisplayMode DisplayLinkToFirstPage { get; set; }
 
         ///<summary>
         /// If set to Always, render a hyperlink to the last page in the list. If set to IfNeeded, render the hyperlink only when the last page isn't visible in the paging control.
         ///</summary>
-        public PagedListDisplayMode DisplayLinkToLastPage { get; set; }
+        public DisplayMode DisplayLinkToLastPage { get; set; }
 
         ///<summary>
         /// If set to Always, render a hyperlink to the previous page of the list. If set to IfNeeded, render the hyperlink only when there is a previous page in the list.
         ///</summary>
-        public PagedListDisplayMode DisplayLinkToPreviousPage { get; set; }
+        public DisplayMode DisplayLinkToPreviousPage { get; set; }
 
         ///<summary>
         /// If set to Always, render a hyperlink to the next page of the list. If set to IfNeeded, render the hyperlink only when there is a next page in the list.
         ///</summary>
-        public PagedListDisplayMode DisplayLinkToNextPage { get; set; }
+        public DisplayMode DisplayLinkToNextPage { get; set; }
 
         ///<summary>
         /// When true, includes hyperlinks for each page in the list.
